@@ -1,6 +1,7 @@
 # Merge 2 sorted vectors into a single sorted vector
 
-def merge_vector(a, b):
+def merge_sort(a, b):
+    """Merge sorted lists without C++ vector type declarations."""
     i = 0
     j = 0
 
@@ -22,5 +23,3 @@ def merge_vector(a, b):
         j += 1
 
     return ans
-
-print(merge_vector([1,2,3,5], [4,6,7]))

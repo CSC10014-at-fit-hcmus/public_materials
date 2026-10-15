@@ -3,7 +3,7 @@ def can_register_thesis(credits: int, gpa: float):
 
 def missing(credits, gpa):
     if can_register_thesis(credits, gpa):
-        return ["Can register thesis"]
+        return []
     else:
         miss = []
         if credits < 120:
@@ -12,5 +12,3 @@ def missing(credits, gpa):
             miss.append(f"GPA is missing {2.0-gpa}")
 
     return miss
-
-print(missing(120-2, 2.-1))
