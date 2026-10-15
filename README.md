@@ -84,7 +84,7 @@ pip install pytest ruff
 
 7. **Review & Merge:**
    - Assigned reviewer reviews the code and verifies all tests pass.
-   - Once approved, merge into `main` and update your row in [`PROGRESS.md`](file:///Users/admin/Desktop/HK1%20Year2/CS252%20CT/python-bootcamp/PROGRESS.md).
+   - Once approved, merge into `main` and update your row in [`PROGRESS.md`](PROGRESS.md).
 
 ## Member Information & Directory Mapping
 
