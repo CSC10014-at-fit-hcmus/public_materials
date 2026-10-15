@@ -92,7 +92,7 @@ pip install pytest ruff
 |---|---|---|---|
 | Nguyễn Phúc Khánh | 25125086 | `khanh_np` | Variant 1 (Binary Search) |
 | Trần Thành Lợi | 25125059 | `loi_tt` | Variant 2 (Insertion Sort) |
-| Trần Phúc Khánh | 25125020 | `khanh_tp` | Variant 3 (Matrix Transpose) |
-| Đặng Xuân Phát | 25125062 | `phat_dx` | Variant 4 (Sieve of Eratosthenes) |
-| Nguyễn Minh Khang | 25125018 | `khang_nm` | Variant 1 (Binary Search) |
-| Lý Tuấn Kiệt | 25125022 | `kiet_lt` | Variant 2 (Insertion Sort) |
+| Trần Phúc Khánh | 25125020 | `khanh_tp` | Variant 5 (Merge two sorted vectors $\rightarrow$ trả về danh sách gộp đã sắp xếp) |
+| Đặng Xuân Phát | 25125062 | `phat_dx` | Variant 6 (Rotate vector right by $k$ steps $\rightarrow$ trả về danh sách đã xoay) |
+| Nguyễn Minh Khang | 25125018 | `khang_nm` | Variant 3 (Matrix Transpose) |
+| Lý Tuấn Kiệt | 25125022 | `kiet_lt` | Variant 4 (Sieve of Eratosthenes) |
