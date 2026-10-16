@@ -1,9 +1,13 @@
+"""Sort a list of integers using the insertion sort algorithm."""
+
 
 def insertion_sort(a: list[int]) -> list[int]:
-    """Sort the list in place using insertion sort and return it.
+    """Sort the input list in place and return that same list.
 
-    Unlike C++, Python lists can be modified directly without declaring
-    a reference type explicitly.
+    Starting at the second element, save the current value as the key and
+    scan left through the already-sorted prefix. Shift each larger value one
+    position right, place the key in the open position, and repeat for the
+    remaining elements. The original list is mutated and then returned.
     """
     for i in range(1, len(a)):
         key = a[i]
