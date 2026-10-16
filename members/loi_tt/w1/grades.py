@@ -1,5 +1,6 @@
 import statistics
 
+
 def summary(scores: list[float]) -> dict:
     if not scores:
         raise ValueError("Danh sach diem khong duoc de trong")
