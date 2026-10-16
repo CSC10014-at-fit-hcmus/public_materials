@@ -5,7 +5,7 @@ def rotate_right(a: list[int], k: int) -> list[int]:
     Difference from C++: Trong Python, chúng ta có thể sử dụng List Slicing 
     (cắt mảng) và chỉ số âm (negative indexing) để xoay danh sách chỉ với 
     một dòng code duy nhất, thay vì phải dùng vòng lặp thủ công hoặc hàm 
-    std::rotate kết hợp với iterator như trong C++[cite: 8].
+    std::rotate kết hợp với iterator như trong C++.
     """
     if not a:
         return []
