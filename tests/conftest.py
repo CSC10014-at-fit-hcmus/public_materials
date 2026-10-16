@@ -16,7 +16,7 @@ if str(BOOTCAMP) not in sys.path:
 
 def pytest_addoption(parser):
     parser.addoption("--member", action="store", default=None, help="your folder under members/, e.g. minh_nv")
-    parser.addoption("--variant", action="store", default="1", help="your member number 1-4 (W1-4)")
+    parser.addoption("--variant", action="store", default="1", help="your member number 1-6 (W1-4)")
 
 
 @pytest.fixture

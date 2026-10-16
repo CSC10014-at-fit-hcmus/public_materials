@@ -84,15 +84,15 @@ pip install pytest ruff
 
 7. **Review & Merge:**
    - Assigned reviewer reviews the code and verifies all tests pass.
-   - Once approved, merge into `main` and update your row in [`PROGRESS.md`](file:///Users/admin/Desktop/HK1%20Year2/CS252%20CT/python-bootcamp/PROGRESS.md).
+   - Once approved, merge into `main` and update your row in [`PROGRESS.md`](PROGRESS.md).
 
 ## Member Information & Directory Mapping
 
 | Member Name | Student ID | Folder Name | C++ Translation Variant (W1-4) |
 |---|---|---|---|
-| Nguyễn Phúc Khánh | 25125086 | `khanh_np` | Variant 1 (Binary Search) |
-| Trần Thành Lợi | 25125059 | `loi_tt` | Variant 2 (Insertion Sort) |
-| Trần Phúc Khánh | 25125020 | `khanh_tp` | Variant 3 (Matrix Transpose) |
-| Đặng Xuân Phát | 25125062 | `phat_dx` | Variant 4 (Sieve of Eratosthenes) |
-| Nguyễn Minh Khang | 25125018 | `khang_nm` | Variant 1 (Binary Search) |
-| Lý Tuấn Kiệt | 25125022 | `kiet_lt` | Variant 2 (Insertion Sort) |
+| Nguyễn Phúc Khánh | 25125086 | `khanh_np` | Variant 1 (Binary search trên vector đã sắp xếp $\rightarrow$ trả về index hoặc -1: `binary_search(a, key)`) |
+| Trần Thành Lợi | 25125059 | `loi_tt` | Variant 2 (Insertion sort (in-place) $\rightarrow$ trả về danh sách đã sắp xếp: `insertion_sort(a)`) |
+| Lý Tuấn Kiệt | 25125022 | `kiet_lt` | Variant 3 (Transpose of a matrix — chuyển vị ma trận 2 chiều vector of vectors: `transpose(a)`) |
+| Nguyễn Minh Khang | 25125018 | `khang_nm` | Variant 4 (Sieve of Eratosthenes $\rightarrow$ tìm các số nguyên tố $\le n$: `primes_up_to(n)`) |
+| Trần Phúc Khánh | 25125020 | `khanh_tp` | Variant 5 (Merge two sorted vectors $\rightarrow$ trả về danh sách gộp đã sắp xếp: `merge_sorted(a, b)`) |
+| Đặng Xuân Phát | 25125062 | `phat_dx` | Variant 6 (Rotate vector right by $k$ steps $\rightarrow$ trả về danh sách đã xoay: `rotate_right(a, k)`) |

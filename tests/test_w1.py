@@ -37,9 +37,20 @@ def test_w1_4_translate(load, variant):
     elif variant == 3:
         assert tr.transpose([[1, 2, 3], [4, 5, 6]]) == [[1, 4], [2, 5], [3, 6]]
         assert tr.transpose([]) == []
-    else:
+    elif variant == 4:
         assert tr.primes_up_to(20) == [2, 3, 5, 7, 11, 13, 17, 19]
         assert tr.primes_up_to(1) == []
+    elif variant == 5:
+        assert tr.merge_sorted([1, 3, 5], [2, 4, 6]) == [1, 2, 3, 4, 5, 6]
+        assert tr.merge_sorted([], [1, 2]) == [1, 2]
+        assert tr.merge_sorted([], []) == []
+    elif variant == 6:
+        assert tr.rotate_right([1, 2, 3, 4, 5], 2) == [4, 5, 1, 2, 3]
+        assert tr.rotate_right([1, 2, 3], 0) == [1, 2, 3]
+        assert tr.rotate_right([], 3) == []
+        assert tr.rotate_right([1, 2, 3], 4) == [3, 1, 2]
+    else:
+        pytest.fail(f"Unknown variant: {variant}")
     assert tr.__doc__ or any(getattr(tr, n).__doc__ for n in dir(tr) if callable(getattr(tr, n)))
 
 
