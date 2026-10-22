@@ -15,12 +15,12 @@ python-bootcamp/
 ├── PROGRESS.md               # Tracking progress table for all members
 ├── README.md                 # This file
 ├── members/                  # Individual exercise directories
-│   ├── khanh_np/ (w1/, w2/, w3/)
-│   ├── phat_dx/  (w1/, w2/, w3/)
-│   ├── loi_tt/   (w1/, w2/, w3/)
-│   ├── khanh_tp/ (w1/, w2/, w3/)
-│   ├── khang_nm/ (w1/, w2/, w3/)
-│   └── kiet_lt/  (w1/, w2/, w3/)
+│   ├── khanhf_ng820/ (w1/, w2/, w3/)
+│   ├── Dang_Xuan_Phat/ (w1/, w2/, w3/)
+│   ├── TranThanhLoi27/ (w1/, w2/, w3/)
+│   ├── TranPhucKhanhh/ (w1/, w2/, w3/)
+│   ├── KaKaAkagami/ (w1/, w2/, w3/)
+│   └── kiethm07/  (w1/, w2/, w3/)
 ├── samples/                  # Shared sample datasets
 │   ├── tasks.csv
 │   └── tasks_bad.csv
@@ -90,9 +90,9 @@ pip install pytest ruff
 
 | Member Name | Student ID | Folder Name | C++ Translation Variant (W1-4) |
 |---|---|---|---|
-| Nguyễn Phúc Khánh | 25125086 | `khanh_np` | Variant 1 (Binary search trên vector đã sắp xếp $\rightarrow$ trả về index hoặc -1: `binary_search(a, key)`) |
-| Trần Thành Lợi | 25125059 | `loi_tt` | Variant 2 (Insertion sort (in-place) $\rightarrow$ trả về danh sách đã sắp xếp: `insertion_sort(a)`) |
-| Lý Tuấn Kiệt | 25125022 | `kiet_lt` | Variant 3 (Transpose of a matrix — chuyển vị ma trận 2 chiều vector of vectors: `transpose(a)`) |
-| Nguyễn Minh Khang | 25125018 | `khang_nm` | Variant 4 (Sieve of Eratosthenes $\rightarrow$ tìm các số nguyên tố $\le n$: `primes_up_to(n)`) |
-| Trần Phúc Khánh | 25125020 | `khanh_tp` | Variant 5 (Merge two sorted vectors $\rightarrow$ trả về danh sách gộp đã sắp xếp: `merge_sorted(a, b)`) |
-| Đặng Xuân Phát | 25125062 | `phat_dx` | Variant 6 (Rotate vector right by $k$ steps $\rightarrow$ trả về danh sách đã xoay: `rotate_right(a, k)`) |
+| Nguyễn Phúc Khánh | 25125086 | `khanhf_ng820` | Variant 1 (Binary search trên vector đã sắp xếp $\rightarrow$ trả về index hoặc -1: `binary_search(a, key)`) |
+| Trần Thành Lợi | 25125059 | `TranThanhLoi27` | Variant 2 (Insertion sort (in-place) $\rightarrow$ trả về danh sách đã sắp xếp: `insertion_sort(a)`) |
+| Lý Tuấn Kiệt | 25125022 | `kiethm07` | Variant 3 (Transpose of a matrix — chuyển vị ma trận 2 chiều vector of vectors: `transpose(a)`) |
+| Nguyễn Minh Khang | 25125018 | `KaKaAkagami` | Variant 4 (Sieve of Eratosthenes $\rightarrow$ tìm các số nguyên tố $\le n$: `primes_up_to(n)`) |
+| Trần Phúc Khánh | 25125020 | `TranPhucKhanhh` | Variant 5 (Merge two sorted vectors $\rightarrow$ trả về danh sách gộp đã sắp xếp: `merge_sorted(a, b)`) |
+| Đặng Xuân Phát | 25125062 | `Dang_Xuan_Phat` | Variant 6 (Rotate vector right by $k$ steps $\rightarrow$ trả về danh sách đã xoay: `rotate_right(a, k)`) |
