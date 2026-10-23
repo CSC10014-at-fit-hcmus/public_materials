@@ -1,11 +1,15 @@
 import csv
 import json
 from datetime import date
+from pathlib import Path
 
 from .models import Task
 
+# Columns every CSV row must provide
+REQUIRED_FIELDS = ("title", "importance", "effort_h", "deadline")
 
-def load_tasks(path: str) -> list[Task]:
+
+def load_tasks(path: str | Path) -> list[Task]:
     """
     Load and parse tasks from a CSV file.
 
@@ -18,12 +22,17 @@ def load_tasks(path: str) -> list[Task]:
     Raises:
         ValueError: If a row has invalid data types or missing expected fields.
     """
-    tasks = []
-    with open(path, mode="r", encoding="utf-8") as file:
+    tasks: list[Task] = []
+    with open(path, mode="r", encoding="utf-8", newline="") as file:
         reader = csv.DictReader(file)
         # Start at line 2 to account for the header row in CSV error reporting
         for line_num, row in enumerate(reader, start=2):
             try:
+                # A row shorter than the header yields None for missing columns
+                missing = [f for f in REQUIRED_FIELDS if row.get(f) is None]
+                if missing:
+                    raise ValueError(f"missing required field(s): {', '.join(missing)}")
+
                 # Parse and cast fields to their expected data types
                 task = Task(
                     title=row["title"],
@@ -31,14 +40,14 @@ def load_tasks(path: str) -> list[Task]:
                     effort_h=float(row["effort_h"]),
                     deadline=date.fromisoformat(row["deadline"]),
                 )
-                tasks.append(task)
-            except (ValueError, KeyError) as e:
+            except (ValueError, KeyError, TypeError) as e:
                 # Include line number for easier debugging
-                raise ValueError(f"Error at line {line_num}: {e}")
+                raise ValueError(f"Error at line {line_num}: {e}") from e
+            tasks.append(task)
     return tasks
 
 
-def save_json(tasks: list[Task], path: str) -> None:
+def save_json(tasks: list[Task], path: str | Path) -> None:
     """
     Serialize a list of Task objects into a formatted JSON file.
 
